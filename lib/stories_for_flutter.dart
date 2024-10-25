@@ -99,6 +99,7 @@ class Stories extends StatelessWidget {
                 children: List.generate(
                   storyItemList!.length,
                   (index) => StoryCircle(
+                    ctx: ctx,
                     story: storyItemList,
                     selectedIndex: index,
                     storyCircleTextStyle: storyCircleTextStyle,

@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Column(
           children: [
-            Stories(
+            Stories(ctx: context,
               circlePadding: 2,
               storyItemList: [
                 StoryItem(
