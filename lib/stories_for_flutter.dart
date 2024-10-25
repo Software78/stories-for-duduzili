@@ -60,8 +60,12 @@ class Stories extends StatelessWidget {
   /// Show story name on main page
   final bool showStoryName;
 
+    final BuildContext ctx;
+
+
   const Stories({
-    Key? key,
+    Key? key,    required this.ctx,
+
     this.storyItemList,
     this.storyCircleTextStyle,
     this.highLightColor,

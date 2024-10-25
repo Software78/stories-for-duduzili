@@ -48,8 +48,11 @@ class StoryCircle extends StatelessWidget {
   /// Show story name on main page
   final bool showStoryName;
 
+  final BuildContext ctx;
+
   const StoryCircle({
     Key? key,
+    required this.ctx,
     this.story,
     this.selectedIndex,
     this.storyCircleTextStyle,
@@ -96,7 +99,7 @@ class StoryCircle extends StatelessWidget {
           InkWell(
             onTap: () {
               Navigator.push(
-                context,
+                ctx,
                 CupertinoPageRoute(
                   builder: (context) => FullPageView(
                     storiesMapList: story,
